@@ -1352,9 +1352,6 @@ h6 {
     margin-bottom: 15px;
 }
 
-.message-input:nth-child(2n) {
-    padding-right: 0px;
-}
 
 .message-submit {
     padding: 0px;
