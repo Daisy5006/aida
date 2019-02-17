@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" c ontent="ie=edge">
+    <title>联系我们</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/swiper.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=您的密匙"></script>
+    <script src="js/commit.js"></script>
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="container-fluid header-top">
+        <div class="container wrap">
+            <div class="language fr">
+                语言<span></span>
+                <div>
+                    <p><a href="javascript:void(0)">中文</a></p>
+                    <p><a href="javascript:void(0)">英文</a></p>
+                </div>
+            </div>
+            <div class="service fr">
+                <p>服务热线：0086-574-62719988</p>
+            </div>
+        </div>
+    </div>
+    <!-- nav -->
+    <div class="header">
+        <div class="container header_box">
+            <div class="row header_row">
+                <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    <button type="button" id="button_nav" class="hidden-lg fr">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="col-lg-7 col-md-12 col-sm-12  col-xs-12 header_nav">
+                    <ul>
+                        <li><a href="about.html">关于我们</a></li>
+                        <li><a href="products.html">产品</a></li>
+                        <li><a href="news.html">新闻</a></li>
+                        <li><a href="technology.html">技术支持</a></li>
+                        <li><a href="join.html">招贤纳士</a></li>
+                        <li class="active"><a href="contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-xs-12 header_form">
+                    <form action="">
+                        <input type="text" placeholder="搜索 " class="form-control">
+                        <button type="submit" class=""></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- banner -->
+    <div class="about-banner">
+        <img src="images/pro-banner.jpg" class="img-responsive" alt="">
+    </div>
+
+
+    <!-- 主体 -->
+    <div class="contact">
+        <div class="container">
+            <div class="contact-map">
+                <div id="map" ></div>
+                <p style="color:transparent;font-weight:600">
+                    <a href="http://developer.baidu.com/map/index.php?title=jspopular/guide/introduction" style="color:#2f83c7" target="_blank">了解如何申请密匙</a>
+                    <a href="http://lbsyun.baidu.com/apiconsole/key?application=key" style="color:#2f83c7" target="_blank">申请密匙</a>
+                </p>
+            </div>
+            <div class="contact-mask">
+                <strong>余姚市艾达微电机有限公司</strong>
+                <p>电话(国内)：0086-574-62707749</p>
+                <p>电话(国外)：0086-574-62752000</p>
+                <p>传真：0086-574-62705022</p>
+                <p>邮箱：aida@aidamotor.com</p>
+                <p>地址：浙江省余姚市最良路22号</p>
+            </div>
+
+            <div class="contact-message">
+                <p>网上咨询</p>
+                <p>我们可以根据您的需求为您推荐合适的产品，请您填写一下表格，我们会及时联系您</p>
+                <form action="" onsubmit="return check();" methods="post">
+                    <textarea placeholder="请输入您的需求"></textarea>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 message-input">
+                            <input type="text" placeholder="请输入姓名" name="姓名">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 message-input">
+                            <input type="text" placeholder="请输入电话号码" name="电话">
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 message-input">
+                            <input type="text" placeholder="请输入邮箱" name="邮箱">
+                        </div>
+                        <div class="col-lg-12 message-submit">
+                            <input type="submit" value="提交">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-nav">
+            <div class="container">
+                <ul class="footer-nav-fl">
+                    <li><a href="#">关于我们</a></li>
+                    <span class="fl hidden-xs hidden-sm">|</span>
+                    <li><a href="#">产品</a></li>
+                    <span class="fl hidden-xs hidden-sm">|</span>
+                    <li><a href="#">新闻</a></li>
+                    <span class="fl hidden-xs hidden-sm">|</span>
+                    <li><a href="#">技术支持</a></li>
+                    <span class="fl hidden-xs hidden-sm">|</span>
+                    <li><a href="#">招贤纳士</a></li>
+                    <span class="fl hidden-xs hidden-sm">|</span>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+                <ul class="footer-nav-fr bdsharebuttonbox">
+                    <li><a href="#" class="bds_sqq" data-cmd="sqq" title="分享到QQ好友"></a></li>
+                    <li><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a></li>
+                    <li><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a></li>
+                    <script>
+                        window._bd_share_config = {
+                            "common": {
+                                "bdSnsKey": {},
+                                "bdText": "",
+                                "bdMini": "2",
+                                "bdMiniList": false,
+                                "bdPic": "",
+                                "bdStyle": "0",
+                                "bdSize": "42"
+                            },
+                            "share": {},
+                            "image": {
+                                "viewList": ["sqq", "weixin", "tsina"],
+                                "viewText": "分享到：",
+                                "viewSize": "42"
+                            },
+                            "selectShare": {
+                                "bdContainerClass": null,
+                                "bdSelectMiniList": ["sqq", "weixin", "tsina"]
+                            }
+                        };
+                        with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script'))
+                            .src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' +
+                            ~(-new Date() / 36e5)];
+                    </script>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright clearfix">
+            <div class="container">
+                <div class="footer-logo">
+                    <img src="images/footer-logo.jpg" class="img-responsive" alt="">
+                </div>
+
+                <div class="footer-erweima">
+                    <img src="images/erweima.jpg" class="img-responsive" alt="">
+                </div>
+                <div class="footer-copyright-text">
+                    <p>Copyright 2017 余姚市艾达微电机有限公司</p>
+                    <p>All rights resereved</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
